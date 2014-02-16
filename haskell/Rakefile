@@ -1,0 +1,22 @@
+desc "Remove files whose names end with a tilde"
+task :delete_unix_backups do
+  files = Dir['*~']
+  rm(files, verbose: true) unless files.empty?
+end
+
+desc "Remove intermediate Haskell files"
+task :clean do
+  files = Dir['*.o'] + Dir['*.hi']
+  rm(files, verbose: true) unless files.empty?
+end
+
+desc "Compile Haskell source code"
+task :compile do
+  system("ghc -o solve solve.hs")
+end
+
+desc "Run tests"
+task :test do
+  system("runhaskell _*.hs")
+end
+
