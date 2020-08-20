@@ -1,0 +1,25 @@
+= SYNOPSIS
+Simple project template, based on elm-starter (which is based on elm-spa and elm-ui)
+
+= LICENSE
+Apache 2.0 (see LICENSE). Some parts may use other licenses, see LICENSE-3rd-party
+
+= USAGE
+- copy the directory
+    cp -R templates/elm-spa-webapp .
+- rename it
+    mv elm-spa-webapp myfancyschmancyproject
+- run it
+    cd myfancyschmancyproject
+    npm install
+    npm start
+    Open http://localhost:8000 to view it in the browser.
+- build it
+    npm run build
+- build for production
+    npm run serverBuild
+  This will build the app for production to the elm-stuff/elm-starter-files/build folder and
+  launch a server in the build folder.
+  Open http://localhost:9000 to view it in the browser.
+    
+
