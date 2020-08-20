@@ -12,7 +12,7 @@ Apache 2.0 (see LICENSE). Some parts may use other licenses, see LICENSE-3rd-par
 - run it
     cd myfancyschmancyproject
     npm install
-    npm start
+    npm run dev
     Open http://localhost:8000 to view it in the browser.
 - build it
     npm run build
